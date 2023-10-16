@@ -1,15 +1,15 @@
-package services;
+package com.yassir.module.services;
 
-import entities.Task;
+import com.yassir.module.entities.Task;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import com.yassir.module.repositories.taskRepository;
 
 import java.util.List;
 @Service
 @AllArgsConstructor
 public class taskServiceImpl implements taskService {
-    @Autowired
+
     private taskRepository taskRepository;
 
     @Override

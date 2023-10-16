@@ -1,6 +1,6 @@
-package services;
+package com.yassir.module.services;
 
-import entities.Task;
+import com.yassir.module.entities.Task;
 
 import java.util.List;
 

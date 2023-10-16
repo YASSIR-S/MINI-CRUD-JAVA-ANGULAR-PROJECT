@@ -1,15 +1,22 @@
-package services;
+package com.yassir.module.services;
 
-import entities.User;
+import com.yassir.module.entities.User;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import repositories.userRepository;
+import com.yassir.module.repositories.userRepository;
+
+import java.util.List;
 
 @Service
 @AllArgsConstructor
 public class userServiceImpl implements userService {
 
     private userRepository userRepository;
+
+    @Override
+    public List<User> getAllUsers(){
+        return userRepository.findAll();
+    }
 
     @Override
     public User createUser(User user) {

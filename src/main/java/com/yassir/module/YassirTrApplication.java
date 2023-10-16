@@ -3,6 +3,7 @@ package com.yassir.module;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 public class YassirTrApplication {
 
@@ -10,4 +11,7 @@ public class YassirTrApplication {
         SpringApplication.run(YassirTrApplication.class, args);
     }
 
+
 }
+
+
